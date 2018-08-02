@@ -19,20 +19,19 @@ public class ExecuteTestNG extends ChimpBaseClass{
 		TestNG objtng = new TestNG();
 		List<String> suites = Lists.newArrayList();
 		//path to testng xml..
-		//String myCurrentDir1 = System.getProperty("user.dir") + File.separator+"testNG/" ;
-		//System.out.println(" myCurrentDir1 " +  myCurrentDir1);
-		String myCurrentDir ="../testNG/";
+		//String myCurrentDir ="../chimpProject/testNG/";
+		String myCurrentDir =System.getProperty("user.dir") + "/testNG/" ;
 		System.out.println(myCurrentDir+"testngGroupScenarios.xml");
 		suites.add(myCurrentDir+"testngGroupScenarios.xml");
 		objtng.setTestSuites(suites);
 		objtng.addListener((ITestNGListener)tla);
 		objtng.run();
-		try {
-			objSendEmail.intiateEmail();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		try {
+//			objSendEmail.intiateEmail();
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 	}
 
 }

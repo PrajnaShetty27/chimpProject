@@ -2,52 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Suite1]" parallel="tests">
   <parameter name="executionUrl" value="Dev"/>
-  <parameter name="buildType" value="RemoteBuild"/>
+  <parameter name="buildType" value="LocalBuild"/>
   <parameter name="browserType" value="chrome"/>
-  <test thread-count="5" verbose="10" name="ChimpUISmokeTestSuiteOne(failed)" parallel="tests">
-    <groups>
-      <run>
-        <include name="Main"/>
-        <include name="Smoke"/>
-        <include name="Regression"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="chimpPackage.Configuration">
-        <methods>
-          <include name="initialiseVariables"/>
-          <include name="tc01setBackUpfiles"/>
-          <include name="tc03setConfigurationsCopy"/>
-          <include name="tc02setConfigurationsDelete"/>
-        </methods>
-      </class> <!-- chimpPackage.Configuration -->
-      <class name="chimpPackage.VerifyHeaderlinks">
-        <methods>
-          <include name="tc04SetDrivertoHome"/>
-          <include name="tc01ManageSettings"/>
-          <include name="initialiseDriver"/>
-          <include name="BeforeTest"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- chimpPackage.VerifyHeaderlinks -->
-      <class name="chimpPackage.ChimpLogout">
-        <methods>
-          <include name="initialiseDriver"/>
-          <include name="BeforeTest"/>
-          <include name="closeBrowser"/>
-          <include name="tc01LogoutFromchimp"/>
-        </methods>
-      </class> <!-- chimpPackage.ChimpLogout -->
-      <class name="chimpPackage.ChimpLogin">
-        <methods>
-          <include name="initialiseDriver"/>
-          <include name="BeforeTest"/>
-          <include name="closeBrowser"/>
-          <include name="tc01LogintoChimp"/>
-        </methods>
-      </class> <!-- chimpPackage.ChimpLogin -->
-    </classes>
-  </test> <!-- ChimpUISmokeTestSuiteOne(failed) -->
   <test thread-count="5" verbose="10" name="ChimpUISmokeTestSuiteTwo(failed)" parallel="tests">
     <groups>
       <run>
@@ -73,4 +29,48 @@
       </class> <!-- chimpPackage.VerifyAuthzerologin -->
     </classes>
   </test> <!-- ChimpUISmokeTestSuiteTwo(failed) -->
+  <test thread-count="5" verbose="10" name="ChimpUISmokeTestSuiteOne(failed)" parallel="tests">
+    <groups>
+      <run>
+        <include name="Main"/>
+        <include name="Smoke"/>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="chimpPackage.Configuration">
+        <methods>
+          <include name="initialiseVariables"/>
+          <include name="tc01setBackUpfiles"/>
+          <include name="tc03setConfigurationsCopy"/>
+          <include name="tc02setConfigurationsDelete"/>
+        </methods>
+      </class> <!-- chimpPackage.Configuration -->
+      <class name="chimpPackage.VerifyHeaderlinks">
+        <methods>
+          <include name="tc04SetDrivertoHome"/>
+          <include name="tc01ManageSettings" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11 12"/>
+          <include name="initialiseDriver"/>
+          <include name="BeforeTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- chimpPackage.VerifyHeaderlinks -->
+      <class name="chimpPackage.ChimpLogout">
+        <methods>
+          <include name="initialiseDriver"/>
+          <include name="BeforeTest"/>
+          <include name="closeBrowser"/>
+          <include name="tc01LogoutFromchimp"/>
+        </methods>
+      </class> <!-- chimpPackage.ChimpLogout -->
+      <class name="chimpPackage.ChimpLogin">
+        <methods>
+          <include name="initialiseDriver"/>
+          <include name="BeforeTest"/>
+          <include name="closeBrowser"/>
+          <include name="tc01LogintoChimp"/>
+        </methods>
+      </class> <!-- chimpPackage.ChimpLogin -->
+    </classes>
+  </test> <!-- ChimpUISmokeTestSuiteOne(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

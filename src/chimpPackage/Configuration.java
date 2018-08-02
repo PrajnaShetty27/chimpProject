@@ -1,6 +1,7 @@
 package chimpPackage;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
@@ -16,7 +17,7 @@ public class Configuration extends ChimpBaseClass{
 	@BeforeClass(groups={"Main"})
     public void initialiseVariables() throws IOException{
 		//To read property file and assign values
-		System.out.println("Read Property Completed");
+		System.out.println("Read Property started");
 		getProperty();
 		System.out.println("Read Property Completed");
     	
@@ -24,7 +25,12 @@ public class Configuration extends ChimpBaseClass{
 	public void getProperty() throws IOException{
 		try 
     	{
-    	     input = getClass().getClassLoader().getResourceAsStream("Configuration.properties");
+//			String myCurrentDir =System.getProperty("user.dir") +File.separator+ "resource"+File.separator+"Configuration.properties" ;
+//			System.out.println(myCurrentDir);
+			//input = getClass().getClassLoader().getResourceAsStream("Configuration.properties");
+			input=new FileInputStream(System.getProperty("user.dir") +File.separator+ "resource"+File.separator+"Configuration.properties") ;
+			System.out.println(input.toString());
+			//input=Configuration.class.getResourceAsStream(myCurrentDir+"Configuration.properties");
     	    // load a properties file
     	    prop.load(input);
     	    strFilePath = prop.getProperty("strFilepathconf");
@@ -111,7 +117,8 @@ public class Configuration extends ChimpBaseClass{
 	{
 		Properties prop = new Properties();
 		String propFileName = "ChimpBaseClass.properties";
-		input = getClass().getClassLoader().getResourceAsStream(propFileName);
+		//input = getClass().getClassLoader().getResourceAsStream(propFileName);
+		input=new FileInputStream(System.getProperty("user.dir") +File.separator+ "resource"+File.separator+propFileName) ;
 		if (input != null) {
 			prop.load(input);
 			strOutputzipfile=prop.getProperty("strOutputzipfileconf");

@@ -1,5 +1,7 @@
 package chimpPackage;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -68,7 +70,8 @@ public class ChimpBaseForSequentialExecution extends ChimpBaseClass {
 		{
 			Properties prop = new Properties();
 			String propFileName = "ChimpBaseClass.properties";
-			InputStream input = getClass().getClassLoader().getResourceAsStream(propFileName);
+			//InputStream input = getClass().getClassLoader().getResourceAsStream(propFileName);
+			input=new FileInputStream(System.getProperty("user.dir") +File.separator+ "resource"+File.separator+propFileName) ;
 			if (input != null) {
 				prop.load(input);
 				strFirefoxDriver = prop.getProperty("strFirefoxDriverconf");

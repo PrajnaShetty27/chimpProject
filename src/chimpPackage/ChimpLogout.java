@@ -1,4 +1,6 @@
 package chimpPackage;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
@@ -21,7 +23,8 @@ public class ChimpLogout extends ChimpBaseForSequentialExecution{
 	{
 		Properties prop = new Properties();
 		String propFileName = "ChimpLogout.properties";
-		input = getClass().getClassLoader().getResourceAsStream(propFileName);
+		//input = getClass().getClassLoader().getResourceAsStream(propFileName);
+		input=new FileInputStream(System.getProperty("user.dir") +File.separator+ "resource"+File.separator+propFileName) ;
 		if (input != null) {
 			prop.load(input);
 			strClickdropdown=prop.getProperty("strClickdropdownconf");
