@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="10" parallel="tests">
+<!--  Specify the browsers -->
+  <parameter name="browserType" value="chrome"/> 
+  <!-- Specify the execution environment RemoteBuild / LocalBuild -->
+  <parameter name="buildType" value="LocalBuild"/>  
+  <test verbose="2" thread-count="2" name="ChimpUIRegressionSmoke" parallel="tests" >
+  
+  <classes>
+  <!-- <class name="chimpPackage.Configuration"/>  -->
+   <class name="chimpBasePackage.ChimpBaseClass"/>
+   <class name="chimpPackage.ChimpLogin"/>
+   <class name="chimpPackage.ChimpLogout"/>
+  </classes>
+  </test> <!-- ChimpUI -->
+  
+ <!--  Specify the browsers -->
+  <parameter name="browserType" value="chrome"/> 
+  <!-- Specify the execution environment RemoteBuild / LocalBuild -->
+  <parameter name="buildType" value="LocalBuild"/>  
+  <test verbose="2" thread-count="2" name="ChimpUIRegression" parallel="tests" >
+ 
+  <classes>
+   <class name="chimpBasePackage.ChimpBaseClass"/>
+   <class name="chimpParallelBasePackage.VerifyAuthzerologin"/>
+  </classes>
+  </test> <!-- ChimpUI -->   
+  
+</suite> <!-- Suite -->

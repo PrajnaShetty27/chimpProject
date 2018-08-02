@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="9" total="34" passed="25">
+  <reporter-output>
+    <line>
+      <![CDATA[Login Button Displayed - PASS]]>
+    </line>
+    <line>
+      <![CDATA[User name text box displayed  - PASS]]>
+    </line>
+    <line>
+      <![CDATA[Sign up Button Displayed - PASS]]>
+    </line>
+    <line>
+      <![CDATA[Validate SignUp button - PASS]]>
+    </line>
+    <line>
+      <![CDATA[New User Activation PASS]]>
+    </line>
+    <line>
+      <![CDATA[Signed up user logged in status PASS]]>
+    </line>
+    <line>
+      <![CDATA[Login Completed Successfully - PASS]]>
+    </line>
+    <line>
+      <![CDATA[Account Settings Navigation link - PASS]]>
+    </line>
+    <line>
+      <![CDATA[Tax Receipts Navigation link - PASS]]>
+    </line>
+    <line>
+      <![CDATA[Giving Tools Navigation link - PASS]]>
+    </line>
+    <line>
+      <![CDATA[Dwarf Rabbit Disaster Recovery Navigation link - PASS]]>
+    </line>
+    <line>
+      <![CDATA[Piggy Rescue Navigation link - PASS]]>
+    </line>
+    <line>
+      <![CDATA[Bunny Buddies Navigation link - PASS]]>
+    </line>
+    <line>
+      <![CDATA[Pot-bellied Pals Navigation link - PASS]]>
+    </line>
+    <line>
+      <![CDATA[Flop-ear Families Navigation link - PASS]]>
+    </line>
+    <line>
+      <![CDATA[Animal Action Navigation link - PASS]]>
+    </line>
+    <line>
+      <![CDATA[Athiest Alms Navigation link - PASS]]>
+    </line>
+    <line>
+      <![CDATA[Food Banks of BC Navigation link - PASS]]>
+    </line>
+    <line>
+      <![CDATA[Clean Water for all Navigation link - PASS]]>
+    </line>
+    <line>
+      <![CDATA[Justice for the poor Navigation link - PASS]]>
+    </line>
+    <line>
+      <![CDATA[Logout Completed Successfully - PASS]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="133930" started-at="2018-08-02T08:55:28Z" finished-at="2018-08-02T08:57:42Z">
+    <groups>
+      <group name="Regression">
+        <method signature="ChimpLogin.tc01LogintoChimp()[pri:0, instance:chimpPackage.ChimpLogin@c818063]" name="tc01LogintoChimp" class="chimpPackage.ChimpLogin"/>
+        <method signature="ChimpLogout.tc01LogoutFromchimp()[pri:0, instance:chimpPackage.ChimpLogout@75bd9247]" name="tc01LogoutFromchimp" class="chimpPackage.ChimpLogout"/>
+        <method signature="VerifyHeaderlinks.tc01ManageSettings(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chimpPackage.VerifyHeaderlinks@3f0ee7cb]" name="tc01ManageSettings" class="chimpPackage.VerifyHeaderlinks"/>
+        <method signature="VerifyAuthzerologin.tc01IsLoginbuttonpresent()[pri:0, instance:chimpPackage.VerifyAuthzerologin@60f82f98]" name="tc01IsLoginbuttonpresent" class="chimpPackage.VerifyAuthzerologin"/>
+        <method signature="VerifyAuthzerologin.tc02IsUsernamepresent()[pri:0, instance:chimpPackage.VerifyAuthzerologin@60f82f98]" name="tc02IsUsernamepresent" class="chimpPackage.VerifyAuthzerologin"/>
+        <method signature="VerifyAuthzerologin.tc03IsSignupbuttonpresent()[pri:0, instance:chimpPackage.VerifyAuthzerologin@60f82f98]" name="tc03IsSignupbuttonpresent" class="chimpPackage.VerifyAuthzerologin"/>
+        <method signature="VerifyAuthzerologin.tc04ValidateSignUpbutton()[pri:0, instance:chimpPackage.VerifyAuthzerologin@60f82f98]" name="tc04ValidateSignUpbutton" class="chimpPackage.VerifyAuthzerologin"/>
+        <method signature="VerifyAuthzerologin.tc06NewUsersignup()[pri:0, instance:chimpPackage.VerifyAuthzerologin@60f82f98]" name="tc06NewUsersignup" class="chimpPackage.VerifyAuthzerologin"/>
+        <method signature="VerifyAuthzerologin.tc07LoginasNewuser()[pri:0, instance:chimpPackage.VerifyAuthzerologin@60f82f98]" name="tc07LoginasNewuser" class="chimpPackage.VerifyAuthzerologin"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="ChimpLogin.tc01LogintoChimp()[pri:0, instance:chimpPackage.ChimpLogin@c818063]" name="tc01LogintoChimp" class="chimpPackage.ChimpLogin"/>
+        <method signature="ChimpLogout.tc01LogoutFromchimp()[pri:0, instance:chimpPackage.ChimpLogout@75bd9247]" name="tc01LogoutFromchimp" class="chimpPackage.ChimpLogout"/>
+        <method signature="VerifyHeaderlinks.tc01ManageSettings(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chimpPackage.VerifyHeaderlinks@3f0ee7cb]" name="tc01ManageSettings" class="chimpPackage.VerifyHeaderlinks"/>
+        <method signature="VerifyAuthzerologin.tc01IsLoginbuttonpresent()[pri:0, instance:chimpPackage.VerifyAuthzerologin@60f82f98]" name="tc01IsLoginbuttonpresent" class="chimpPackage.VerifyAuthzerologin"/>
+        <method signature="VerifyAuthzerologin.tc02IsUsernamepresent()[pri:0, instance:chimpPackage.VerifyAuthzerologin@60f82f98]" name="tc02IsUsernamepresent" class="chimpPackage.VerifyAuthzerologin"/>
+        <method signature="VerifyAuthzerologin.tc03IsSignupbuttonpresent()[pri:0, instance:chimpPackage.VerifyAuthzerologin@60f82f98]" name="tc03IsSignupbuttonpresent" class="chimpPackage.VerifyAuthzerologin"/>
+        <method signature="VerifyAuthzerologin.tc04ValidateSignUpbutton()[pri:0, instance:chimpPackage.VerifyAuthzerologin@60f82f98]" name="tc04ValidateSignUpbutton" class="chimpPackage.VerifyAuthzerologin"/>
+        <method signature="VerifyAuthzerologin.tc06NewUsersignup()[pri:0, instance:chimpPackage.VerifyAuthzerologin@60f82f98]" name="tc06NewUsersignup" class="chimpPackage.VerifyAuthzerologin"/>
+        <method signature="VerifyAuthzerologin.tc07LoginasNewuser()[pri:0, instance:chimpPackage.VerifyAuthzerologin@60f82f98]" name="tc07LoginasNewuser" class="chimpPackage.VerifyAuthzerologin"/>
+      </group> <!-- Smoke -->
+      <group name="Main">
+        <method signature="Configuration.tc01setBackUpfiles()[pri:0, instance:chimpPackage.Configuration@2ff4f00f]" name="tc01setBackUpfiles" class="chimpPackage.Configuration"/>
+        <method signature="Configuration.tc02setConfigurationsDelete(java.lang.String)[pri:0, instance:chimpPackage.Configuration@2ff4f00f]" name="tc02setConfigurationsDelete" class="chimpPackage.Configuration"/>
+        <method signature="Configuration.tc03setConfigurationsCopy(java.lang.String, java.lang.String)[pri:0, instance:chimpPackage.Configuration@2ff4f00f]" name="tc03setConfigurationsCopy" class="chimpPackage.Configuration"/>
+      </group> <!-- Main -->
+    </groups>
+    <test name="ChimpUISmokeTestSuiteTwo" duration-ms="29710" started-at="2018-08-02T08:55:28Z" finished-at="2018-08-02T08:55:57Z">
+      <class name="chimpPackage.VerifyAuthzerologin">
+        <test-method status="PASS" signature="initialiseDriver()[pri:0, instance:chimpPackage.VerifyAuthzerologin@60f82f98]" name="initialiseDriver" is-config="true" duration-ms="5" started-at="2018-08-02T08:55:28Z" finished-at="2018-08-02T08:55:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseDriver -->
+        <test-method status="PASS" signature="tc01IsLoginbuttonpresent()[pri:0, instance:chimpPackage.VerifyAuthzerologin@60f82f98]" name="tc01IsLoginbuttonpresent" duration-ms="45" started-at="2018-08-02T08:55:28Z" finished-at="2018-08-02T08:55:28Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Login Button Displayed - PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc01IsLoginbuttonpresent -->
+        <test-method status="PASS" signature="tc02IsUsernamepresent()[pri:0, instance:chimpPackage.VerifyAuthzerologin@60f82f98]" name="tc02IsUsernamepresent" duration-ms="4535" started-at="2018-08-02T08:55:28Z" finished-at="2018-08-02T08:55:32Z">
+          <reporter-output>
+            <line>
+              <![CDATA[User name text box displayed  - PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc02IsUsernamepresent -->
+        <test-method status="PASS" signature="tc03IsSignupbuttonpresent()[pri:0, instance:chimpPackage.VerifyAuthzerologin@60f82f98]" name="tc03IsSignupbuttonpresent" duration-ms="793" started-at="2018-08-02T08:55:32Z" finished-at="2018-08-02T08:55:33Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Sign up Button Displayed - PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc03IsSignupbuttonpresent -->
+        <test-method status="PASS" signature="tc04ValidateSignUpbutton()[pri:0, instance:chimpPackage.VerifyAuthzerologin@60f82f98]" name="tc04ValidateSignUpbutton" duration-ms="1691" started-at="2018-08-02T08:55:33Z" finished-at="2018-08-02T08:55:35Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Validate SignUp button - PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc04ValidateSignUpbutton -->
+        <test-method status="PASS" signature="tc06NewUsersignup()[pri:0, instance:chimpPackage.VerifyAuthzerologin@60f82f98]" name="tc06NewUsersignup" duration-ms="14734" started-at="2018-08-02T08:55:35Z" finished-at="2018-08-02T08:55:50Z">
+          <reporter-output>
+            <line>
+              <![CDATA[New User Activation PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc06NewUsersignup -->
+        <test-method status="PASS" signature="tc07LoginasNewuser()[pri:0, instance:chimpPackage.VerifyAuthzerologin@60f82f98]" name="tc07LoginasNewuser" duration-ms="6460" started-at="2018-08-02T08:55:50Z" finished-at="2018-08-02T08:55:56Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Signed up user logged in status PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc07LoginasNewuser -->
+        <test-method status="PASS" signature="tc08SetDrivertoHome()[pri:0, instance:chimpPackage.VerifyAuthzerologin@60f82f98]" name="tc08SetDrivertoHome" is-config="true" duration-ms="1437" started-at="2018-08-02T08:55:56Z" finished-at="2018-08-02T08:55:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc08SetDrivertoHome -->
+      </class> <!-- chimpPackage.VerifyAuthzerologin -->
+      <class name="chimpPackage.ChimpBaseForSequentialExecution">
+        <test-method status="PASS" signature="BeforeTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chimpPackage.ChimpBaseForSequentialExecution@5ba23b66]" name="BeforeTest" is-config="true" duration-ms="8913" started-at="2018-08-02T08:55:13Z" finished-at="2018-08-02T08:55:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[LocalBuild]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="BeforeTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chimpPackage.ChimpBaseForParallelExecutionOne@6442b0a6]" name="BeforeTest" is-config="true" duration-ms="6204" started-at="2018-08-02T08:55:22Z" finished-at="2018-08-02T08:55:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[LocalBuild]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:chimpPackage.ChimpBaseForSequentialExecution@5ba23b66]" name="closeBrowser" is-config="true" duration-ms="85" started-at="2018-08-02T08:57:42Z" finished-at="2018-08-02T08:57:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:chimpPackage.ChimpBaseForParallelExecutionOne@6442b0a6]" name="closeBrowser" is-config="true" duration-ms="68" started-at="2018-08-02T08:57:42Z" finished-at="2018-08-02T08:57:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- chimpPackage.ChimpBaseForSequentialExecution -->
+    </test> <!-- ChimpUISmokeTestSuiteTwo -->
+    <test name="ChimpUISmokeTestSuiteOne" duration-ms="133930" started-at="2018-08-02T08:55:28Z" finished-at="2018-08-02T08:57:42Z">
+      <class name="chimpPackage.Configuration">
+        <test-method status="PASS" signature="initialiseVariables()[pri:0, instance:chimpPackage.Configuration@2ff4f00f]" name="initialiseVariables" is-config="true" duration-ms="0" started-at="2018-08-02T08:55:28Z" finished-at="2018-08-02T08:55:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseVariables -->
+        <test-method status="PASS" signature="tc01setBackUpfiles()[pri:0, instance:chimpPackage.Configuration@2ff4f00f]" name="tc01setBackUpfiles" duration-ms="8" started-at="2018-08-02T08:55:28Z" finished-at="2018-08-02T08:55:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01setBackUpfiles -->
+        <test-method status="PASS" signature="tc02setConfigurationsDelete(java.lang.String)[pri:0, instance:chimpPackage.Configuration@2ff4f00f]" name="tc02setConfigurationsDelete" duration-ms="0" started-at="2018-08-02T08:55:28Z" data-provider="Delete" finished-at="2018-08-02T08:55:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/home/sanu/AutomationBasePackageExported/chimpProject/AutoRepository/database/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02setConfigurationsDelete -->
+        <test-method status="PASS" signature="tc02setConfigurationsDelete(java.lang.String)[pri:0, instance:chimpPackage.Configuration@2ff4f00f]" name="tc02setConfigurationsDelete" duration-ms="0" started-at="2018-08-02T08:55:28Z" data-provider="Delete" finished-at="2018-08-02T08:55:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/home/sanu/AutomationBasePackageExported/chimpProject/AutoRepository/screenshot/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02setConfigurationsDelete -->
+        <test-method status="PASS" signature="tc03setConfigurationsCopy(java.lang.String, java.lang.String)[pri:0, instance:chimpPackage.Configuration@2ff4f00f]" name="tc03setConfigurationsCopy" duration-ms="10" started-at="2018-08-02T08:55:28Z" data-provider="COPY" finished-at="2018-08-02T08:55:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[../chimpProject/AutoRepository/template/HeaderLinks.xlsx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[../chimpProject/AutoRepository/database/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03setConfigurationsCopy -->
+      </class> <!-- chimpPackage.Configuration -->
+      <class name="chimpPackage.ChimpLogin">
+        <test-method status="PASS" signature="initialiseDriver()[pri:0, instance:chimpPackage.ChimpLogin@c818063]" name="initialiseDriver" is-config="true" duration-ms="8" started-at="2018-08-02T08:55:28Z" finished-at="2018-08-02T08:55:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseDriver -->
+        <test-method status="PASS" signature="tc01LogintoChimp()[pri:0, instance:chimpPackage.ChimpLogin@c818063]" name="tc01LogintoChimp" duration-ms="34132" started-at="2018-08-02T08:55:28Z" finished-at="2018-08-02T08:56:03Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Login Completed Successfully - PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc01LogintoChimp -->
+      </class> <!-- chimpPackage.ChimpLogin -->
+      <class name="chimpPackage.VerifyHeaderlinks">
+        <test-method status="PASS" signature="initialiseDriver()[pri:0, instance:chimpPackage.VerifyHeaderlinks@3f0ee7cb]" name="initialiseDriver" is-config="true" duration-ms="6" started-at="2018-08-02T08:56:03Z" finished-at="2018-08-02T08:56:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseDriver -->
+        <test-method status="PASS" signature="tc01ManageSettings(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chimpPackage.VerifyHeaderlinks@3f0ee7cb]" name="tc01ManageSettings" duration-ms="7028" started-at="2018-08-02T08:56:03Z" data-provider="MANAGELINKS" finished-at="2018-08-02T08:56:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Account Settings]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edit Your CHIMP Account]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Account Settings]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Account Settings Navigation link - PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc01ManageSettings -->
+        <test-method status="PASS" signature="tc01ManageSettings(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chimpPackage.VerifyHeaderlinks@3f0ee7cb]" name="tc01ManageSettings" duration-ms="6776" started-at="2018-08-02T08:56:10Z" data-provider="MANAGELINKS" finished-at="2018-08-02T08:56:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tax Receipts]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tax Receipts]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Tax Receipts]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Tax Receipts Navigation link - PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc01ManageSettings -->
+        <test-method status="PASS" signature="tc01ManageSettings(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chimpPackage.VerifyHeaderlinks@3f0ee7cb]" name="tc01ManageSettings" duration-ms="6572" started-at="2018-08-02T08:56:16Z" data-provider="MANAGELINKS" finished-at="2018-08-02T08:56:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Giving Tools]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Giving Tools]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Giving Tools]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Giving Tools Navigation link - PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc01ManageSettings -->
+        <test-method status="PASS" signature="tc01ManageSettings(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chimpPackage.VerifyHeaderlinks@3f0ee7cb]" name="tc01ManageSettings" duration-ms="7981" started-at="2018-08-02T08:56:23Z" data-provider="MANAGELINKS" finished-at="2018-08-02T08:56:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dwarf Rabbit Disaster Recovery]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dwarf Rabbit Disaster Recovery]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Dwarf Rabbit Disaster Recovery]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Dwarf Rabbit Disaster Recovery Navigation link - PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc01ManageSettings -->
+        <test-method status="PASS" signature="tc01ManageSettings(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chimpPackage.VerifyHeaderlinks@3f0ee7cb]" name="tc01ManageSettings" duration-ms="6831" started-at="2018-08-02T08:56:31Z" data-provider="MANAGELINKS" finished-at="2018-08-02T08:56:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Piggy Rescue]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Piggy Rescue]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Piggy Rescue]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Piggy Rescue Navigation link - PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc01ManageSettings -->
+        <test-method status="PASS" signature="tc01ManageSettings(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chimpPackage.VerifyHeaderlinks@3f0ee7cb]" name="tc01ManageSettings" duration-ms="6546" started-at="2018-08-02T08:56:38Z" data-provider="MANAGELINKS" finished-at="2018-08-02T08:56:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bunny Buddies]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bunny Buddies]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Bunny Buddies]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Bunny Buddies Navigation link - PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc01ManageSettings -->
+        <test-method status="PASS" signature="tc01ManageSettings(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chimpPackage.VerifyHeaderlinks@3f0ee7cb]" name="tc01ManageSettings" duration-ms="7886" started-at="2018-08-02T08:56:44Z" data-provider="MANAGELINKS" finished-at="2018-08-02T08:56:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pot-bellied Pals]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pot-bellied Pals]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Pot-bellied Pals]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Pot-bellied Pals Navigation link - PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc01ManageSettings -->
+        <test-method status="PASS" signature="tc01ManageSettings(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chimpPackage.VerifyHeaderlinks@3f0ee7cb]" name="tc01ManageSettings" duration-ms="6462" started-at="2018-08-02T08:56:52Z" data-provider="MANAGELINKS" finished-at="2018-08-02T08:56:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Flop-ear Families]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Flop-ear Families]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Flop-ear Families]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Flop-ear Families Navigation link - PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc01ManageSettings -->
+        <test-method status="PASS" signature="tc01ManageSettings(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chimpPackage.VerifyHeaderlinks@3f0ee7cb]" name="tc01ManageSettings" duration-ms="8859" started-at="2018-08-02T08:56:59Z" data-provider="MANAGELINKS" finished-at="2018-08-02T08:57:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Animal Action]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Give to any Canadian charity | CHIMP]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Animal Action]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Animal Action Navigation link - PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc01ManageSettings -->
+        <test-method status="PASS" signature="tc01ManageSettings(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chimpPackage.VerifyHeaderlinks@3f0ee7cb]" name="tc01ManageSettings" duration-ms="6959" started-at="2018-08-02T08:57:08Z" data-provider="MANAGELINKS" finished-at="2018-08-02T08:57:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Athiest Alms]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Give to any Canadian charity | CHIMP]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Athiest Alms]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Athiest Alms Navigation link - PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc01ManageSettings -->
+        <test-method status="PASS" signature="tc01ManageSettings(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chimpPackage.VerifyHeaderlinks@3f0ee7cb]" name="tc01ManageSettings" duration-ms="7877" started-at="2018-08-02T08:57:14Z" data-provider="MANAGELINKS" finished-at="2018-08-02T08:57:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Food Banks of BC]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Give to any Canadian charity | CHIMP]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Food Banks of BC]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Food Banks of BC Navigation link - PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc01ManageSettings -->
+        <test-method status="PASS" signature="tc01ManageSettings(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chimpPackage.VerifyHeaderlinks@3f0ee7cb]" name="tc01ManageSettings" duration-ms="6486" started-at="2018-08-02T08:57:22Z" data-provider="MANAGELINKS" finished-at="2018-08-02T08:57:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Clean Water for all]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Give to any Canadian charity | CHIMP]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Clean Water for all]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Clean Water for all Navigation link - PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc01ManageSettings -->
+        <test-method status="PASS" signature="tc01ManageSettings(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chimpPackage.VerifyHeaderlinks@3f0ee7cb]" name="tc01ManageSettings" duration-ms="6478" started-at="2018-08-02T08:57:29Z" data-provider="MANAGELINKS" finished-at="2018-08-02T08:57:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Justice for the poor]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Give to any Canadian charity | CHIMP]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Justice for the poor]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Justice for the poor Navigation link - PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc01ManageSettings -->
+        <test-method status="PASS" signature="tc04SetDrivertoHome()[pri:0, instance:chimpPackage.VerifyHeaderlinks@3f0ee7cb]" name="tc04SetDrivertoHome" is-config="true" duration-ms="1938" started-at="2018-08-02T08:57:35Z" finished-at="2018-08-02T08:57:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc04SetDrivertoHome -->
+      </class> <!-- chimpPackage.VerifyHeaderlinks -->
+      <class name="chimpPackage.ChimpLogout">
+        <test-method status="PASS" signature="initialiseDriver()[pri:0, instance:chimpPackage.ChimpLogout@75bd9247]" name="initialiseDriver" is-config="true" duration-ms="4" started-at="2018-08-02T08:57:37Z" finished-at="2018-08-02T08:57:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseDriver -->
+        <test-method status="PASS" signature="tc01LogoutFromchimp()[pri:0, instance:chimpPackage.ChimpLogout@75bd9247]" name="tc01LogoutFromchimp" duration-ms="4386" started-at="2018-08-02T08:57:37Z" finished-at="2018-08-02T08:57:42Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Logout Completed Successfully - PASS]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc01LogoutFromchimp -->
+      </class> <!-- chimpPackage.ChimpLogout -->
+    </test> <!-- ChimpUISmokeTestSuiteOne -->
+  </suite> <!-- Suite1 -->
+</testng-results>
