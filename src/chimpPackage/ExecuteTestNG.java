@@ -21,7 +21,7 @@ public class ExecuteTestNG extends ChimpBaseClass{
 		//path to testng xml..
 		//String myCurrentDir1 = System.getProperty("user.dir") + File.separator+"testNG/" ;
 		//System.out.println(" myCurrentDir1 " +  myCurrentDir1);
-		String myCurrentDir ="../chimpProject/testNG/";
+		String myCurrentDir ="../testNG/";
 		System.out.println(myCurrentDir+"testngGroupScenarios.xml");
 		suites.add(myCurrentDir+"testngGroupScenarios.xml");
 		objtng.setTestSuites(suites);
