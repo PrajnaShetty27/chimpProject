@@ -36,6 +36,7 @@ public class ChimpLogin extends ChimpBaseForSequentialExecution{
 			strlognUsername=prop.getProperty("strlognUsernameconf");
 			strloginPassword=prop.getProperty("strloginPasswordconf");
 			strFilepath=prop.getProperty("strFilepathconf");
+			strFilepath=System.getProperty("user.dir") +File.separator+strFilepath;
 			strSheetname=prop.getProperty("strSheetnameconf");
 			strTabname=prop.getProperty("strTabnameconf");
 			strClickloginbutton=prop.getProperty("strClickloginbuttonconf");

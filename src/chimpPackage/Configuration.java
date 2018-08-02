@@ -34,6 +34,7 @@ public class Configuration extends ChimpBaseClass{
     	    // load a properties file
     	    prop.load(input);
     	    strFilePath = prop.getProperty("strFilepathconf");
+    	    strFilePath=System.getProperty("user.dir") +File.separator+strFilePath;
     	    strSheetName =prop.getProperty("strSheetNameconf");
     	    strSheetDelete = prop.getProperty("strSheetDeleteconf");
     	    strSheetCopy = prop.getProperty("strSheetCopyconf");
@@ -122,11 +123,15 @@ public class Configuration extends ChimpBaseClass{
 		if (input != null) {
 			prop.load(input);
 			strOutputzipfile=prop.getProperty("strOutputzipfileconf");
+			strOutputzipfile=System.getProperty("user.dir") +File.separator+strOutputzipfile;
 			strSourcefolder=prop.getProperty("strSourcefolderconf");
+			strSourcefolder=System.getProperty("user.dir") +File.separator+strSourcefolder;
 			strFirefoxDriver = prop.getProperty("strFirefoxDriverconf");
+			strFirefoxDriver=System.getProperty("user.dir") +File.separator+strFirefoxDriver;
 			strBaseUrlDev=prop.getProperty("strBaseUrlDevconf");
 			strBaseUrlStage=prop.getProperty("strBaseUrlStageconf");
 			strChromeDriver=prop.getProperty("strChromeDriverconf");
+			strChromeDriver=System.getProperty("user.dir") +File.separator+strChromeDriver;
 			strBSPlatform=prop.getProperty("strBSPlatformconf");
 			strBSBrowserVersion=prop.getProperty("strBSBrowserVersionconf");
 			strBSSeleniumversion=prop.getProperty("strBSSeleniumversionconf");

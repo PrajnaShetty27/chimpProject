@@ -45,6 +45,7 @@ public class VerifyAuthzerologin extends ChimpBaseForParallelExecutionOne{
 		if (input != null) {
 			prop.load(input);
 			strFilepath=prop.getProperty("strFilepathconf");
+			strFilepath=System.getProperty("user.dir") +File.separator+strFilepath;
 			strSheetname=prop.getProperty("strSheetnameconf");
 			strTabname=prop.getProperty("strTabnameconf");
 			strloginbutton=prop.getProperty("strloginbuttonconf");

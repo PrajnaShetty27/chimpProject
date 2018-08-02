@@ -43,6 +43,7 @@ public class TakeScreenShot {
 		if (input != null) {
 			prop.load(input);
 			strFileLoc=prop.getProperty("strFileLocconf");
+			strFileLoc=System.getProperty("user.dir") +File.separator+strFileLoc;
 			strfileExtension=prop.getProperty("strfileExtensionconf");
 		}
 		else 

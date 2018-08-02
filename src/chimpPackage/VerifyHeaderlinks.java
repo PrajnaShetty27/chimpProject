@@ -42,6 +42,7 @@ public class VerifyHeaderlinks extends ChimpBaseForSequentialExecution{
 			strManageGivingGroups=prop.getProperty("strManageGivingGroupsconf");
 			strManageCampaign=prop.getProperty("strManageCampaignconf");
 			strFilepath=prop.getProperty("strFilepathconf");
+			strFilepath=System.getProperty("user.dir") +File.separator+strFilepath;
 			strSheetname=prop.getProperty("strSheetnameconf");
 			strTabname=prop.getProperty("strTabnameconf");
 			System.out.println();
