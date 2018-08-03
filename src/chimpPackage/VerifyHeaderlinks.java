@@ -94,9 +94,6 @@ public class VerifyHeaderlinks extends ChimpBaseForSequentialExecution{
 		catch(AssertionError ae){
 			Reporter.log(strLinkname + " Navigation link - FAILED");
 		}
-		byElement=By.xpath(strdashboardhomePage);
-		objWaitforanelement.waitForElement(driver, byElement);
-		driver.findElement(byElement).click();
 	}
 	
 	//@Test(groups={"Smoke","Regression"})
