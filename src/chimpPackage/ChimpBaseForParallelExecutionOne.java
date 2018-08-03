@@ -85,6 +85,7 @@ public class ChimpBaseForParallelExecutionOne extends ChimpBaseClass{
 				strBSPlatform=prop.getProperty("strBSPlatformconf");
 				strBSBrowserVersion=prop.getProperty("strBSBrowserVersionconf");
 				strBSSeleniumversion=prop.getProperty("strBSSeleniumversionconf");
+				strResolution=prop.getProperty("strResolutionconf");
 				USERNAME=prop.getProperty("USERNAMECONF");
 				AUTOMATE_KEY=prop.getProperty("AUTOMATE_KEYCONF");
 			}
@@ -104,6 +105,7 @@ public class ChimpBaseForParallelExecutionOne extends ChimpBaseClass{
 			Capabilities.setBrowserName(browser);
 			Capabilities.setVersion(strBSBrowserVersion);
 			Capabilities.setCapability("browserstack.debug", "true");
+		//	Capabilities.setCapability("resolution", strResolution);
 			Capabilities.setCapability("browserstack.selenium_version",strBSSeleniumversion);
 			return Capabilities;
 		}

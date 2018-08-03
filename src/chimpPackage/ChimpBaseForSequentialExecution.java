@@ -77,6 +77,7 @@ public class ChimpBaseForSequentialExecution extends ChimpBaseClass {
 				strFirefoxDriver = prop.getProperty("strFirefoxDriverconf");
 				strBaseUrlDev=prop.getProperty("strBaseUrlDevconf");
 				strBaseUrlStage=prop.getProperty("strBaseUrlStageconf");
+				strResolution=prop.getProperty("strResolutionconf");
 				strChromeDriver=prop.getProperty("strChromeDriverconf");
 				//strBSPlatform=prop.getProperty("strBSPlatformconf");
 				String temp=prop.getProperty("strBSPlatformconf");;
@@ -101,6 +102,7 @@ public class ChimpBaseForSequentialExecution extends ChimpBaseClass {
 			Capabilities.setVersion(strBSBrowserVersion);
 			Capabilities.setCapability("browserstack.debug", "true");
 			Capabilities.setCapability("browserstack.selenium_version",strBSSeleniumversion);
+		//	Capabilities.setCapability("resolution", strResolution);
 			return Capabilities;
 		}
 		

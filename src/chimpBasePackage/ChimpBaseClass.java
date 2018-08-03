@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import chimpPackage.Backuppreviousresults;
@@ -43,6 +44,7 @@ public class ChimpBaseClass {
 	public static  String AUTOMATE_KEY;
 	public static String URL;
 	public String strBSPlatform;
+	public String strResolution;
 	public String strBSBrowserVersion,strBSSeleniumversion;
 	//Connect to DB
 	public ChimpConnectToDB objChimpConnectToDB = new ChimpConnectToDB();
@@ -50,6 +52,7 @@ public class ChimpBaseClass {
 	public TakeScreenShot objTakeScreenShot = new TakeScreenShot();
 	//To send Email
 	public static SendEmail objSendEmail=new SendEmail();
+	
 	
 	
 		
