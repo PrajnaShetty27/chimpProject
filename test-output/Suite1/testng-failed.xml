@@ -2,33 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Suite1]" parallel="tests">
   <parameter name="executionUrl" value="Dev"/>
-  <parameter name="buildType" value="RemoteBuild"/>
+  <parameter name="buildType" value="LocalBuild"/>
   <parameter name="browserType" value="chrome"/>
-  <test thread-count="5" verbose="10" name="ChimpUISmokeTestSuiteTwo(failed)" parallel="tests">
-    <groups>
-      <run>
-        <include name="Main"/>
-        <include name="Regression"/>
-        <include name="Smoke"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="chimpPackage.VerifyAuthzerologin">
-        <methods>
-          <include name="tc04ValidateSignUpbutton"/>
-          <include name="tc07LoginasNewuser"/>
-          <include name="closeBrowser"/>
-          <include name="tc02IsUsernamepresent"/>
-          <include name="tc06NewUsersignup"/>
-          <include name="tc08SetDrivertoHome"/>
-          <include name="initialiseDriver"/>
-          <include name="BeforeTest"/>
-          <include name="tc03IsSignupbuttonpresent"/>
-          <include name="tc01IsLoginbuttonpresent"/>
-        </methods>
-      </class> <!-- chimpPackage.VerifyAuthzerologin -->
-    </classes>
-  </test> <!-- ChimpUISmokeTestSuiteTwo(failed) -->
   <test thread-count="5" verbose="10" name="ChimpUISmokeTestSuiteOne(failed)" parallel="tests">
     <groups>
       <run>
@@ -38,38 +13,10 @@
       </run>
     </groups>
     <classes>
-      <class name="chimpPackage.VerifyHeaderlinks">
-        <methods>
-          <include name="initialiseDriver"/>
-          <include name="BeforeTest"/>
-          <include name="tc03SetDrivertoHome"/>
-          <include name="tc02ManageLinks2"/>
-          <include name="closeBrowser"/>
-          <include name="tc01ManageLinks1"/>
-        </methods>
-      </class> <!-- chimpPackage.VerifyHeaderlinks -->
-      <class name="chimpPackage.ChimpLogout">
-        <methods>
-          <include name="initialiseDriver"/>
-          <include name="BeforeTest"/>
-          <include name="closeBrowser"/>
-          <include name="tc01LogoutFromchimp"/>
-        </methods>
-      </class> <!-- chimpPackage.ChimpLogout -->
-      <class name="chimpPackage.ChimpLogin">
-        <methods>
-          <include name="initialiseDriver"/>
-          <include name="BeforeTest"/>
-          <include name="closeBrowser"/>
-          <include name="tc01LogintoChimp"/>
-        </methods>
-      </class> <!-- chimpPackage.ChimpLogin -->
       <class name="chimpPackage.Configuration">
         <methods>
           <include name="initialiseVariables"/>
-          <include name="tc01setBackUpfiles"/>
-          <include name="tc03setConfigurationsCopy"/>
-          <include name="tc02setConfigurationsDelete"/>
+          <include name="tc03setConfigurationsCopy" invocation-numbers="0"/>
         </methods>
       </class> <!-- chimpPackage.Configuration -->
     </classes>

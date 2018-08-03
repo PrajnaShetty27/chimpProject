@@ -92,6 +92,7 @@ public class Configuration extends ChimpBaseClass{
 	
 	@Test(dataProvider="Delete",groups={"Main"})
 	public void tc02setConfigurationsDelete(String strFolderPath) throws IOException{
+		strFolderPath=System.getProperty("user.dir") +File.separator+strFolderPath;
 		File file = new File(strFolderPath); 
 		Delete objDeleteFile=new Delete();
 		objDeleteFile.deleteFiles(file);
@@ -109,6 +110,8 @@ public class Configuration extends ChimpBaseClass{
 	@Test(dataProvider = "COPY",groups={"Main"})
 	public void tc03setConfigurationsCopy(String strValueold,String strValuenew) throws IOException, InterruptedException{
 		Copy objCopyFiles=new Copy();
+		strValueold=System.getProperty("user.dir") +File.separator+strValueold;
+		strValuenew=System.getProperty("user.dir") +File.separator+strValuenew;
 		objCopyFiles.copyFiles(strValueold,strValuenew);
 	}
 	
