@@ -1,5 +1,6 @@
 package chimpPackage;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -108,7 +109,7 @@ public class SendEmail {
 	             messageBodyPart = new MimeBodyPart();
 	             //messageBodyPart.setContent(messageBodyPart, "text/html; charset=utf-8");
 	             String strEmailFileName="emailable-report.html";
-	             String strPathfile="../chimpProject/test-output/";
+	             String strPathfile=System.getProperty("user.dir") +File.separator+"test-output/";
 	             String filename = strPathfile+strEmailFileName;
 	             DataSource source = new FileDataSource(filename);
 	             messageBodyPart.setDataHandler(new DataHandler(source));

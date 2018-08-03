@@ -26,12 +26,12 @@ public class ExecuteTestNG extends ChimpBaseClass{
 		objtng.setTestSuites(suites);
 		objtng.addListener((ITestNGListener)tla);
 		objtng.run();
-//		try {
-//			objSendEmail.intiateEmail();
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
+		try {
+			objSendEmail.intiateEmail();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }
